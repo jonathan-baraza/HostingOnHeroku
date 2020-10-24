@@ -10,8 +10,8 @@
 	<div class="alert alert-success">Hello {{$user->username}}, Welcome to your profile.</div>
 </center>
 
-<div class="row" style="border-top:2px solid #dadada;width:90%;margin-top: 1%;">
-	<div class="col-md-6 pl-5" style="border-right: 2px solid #dadada;">
+<div class="row borderssss" style="border-top:2px solid #dadada;width:90%;margin-top: 1%;">
+	<div class="col-md-6 pl-5 bordersss" style="border-right: 2px solid #dadada;">
 
 		<table class="table table-striped table-bordered text-center">
 			<thead>
@@ -20,10 +20,6 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td class="text-success">Image</td>
-					<td><center><img style="width: 100px;height: 100px;border-radius: 50px;" src="/storage/{{$user->profile->image ?? 'avatar.png'}}"></center></td>
-				</tr>
 				<tr>
 					<td class="text-success">Name</td>
 					<td>{{$user->name}}</td>
@@ -40,7 +36,7 @@
 		</table>
 	</div>
 	<div class="col-md-6">
-		<form class="p-3 border" style="" method="POST" enctype="multipart/form-data" action="{{route('profile_update')}}">
+		<form class="p-3 border form" style="" method="POST" enctype="multipart/form-data" action="{{route('profile_update')}}">
 			@csrf
 			<div class="alert alert-warning">Update Form</div>
 			<x-jet-validation-errors class="mb-4 text-danger" />

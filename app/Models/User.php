@@ -52,7 +52,7 @@ class User extends Authenticatable
             $user->profile()->create([
                 'about_me'=>'I am '.$user->name.' This is my blog app profile',
             ]);
-            Mail::to($user->email)->send(new NewUserMail());
+            //Mail::to($user->email)->send(new NewUserMail());
 
         });
     }

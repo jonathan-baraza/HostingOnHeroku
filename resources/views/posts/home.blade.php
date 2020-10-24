@@ -14,25 +14,27 @@
 <center>
 	<div class="alert alert-success">Welcome to the Home Page.</div>
 </center>
-<main style="width:60%;margin-left: 20%">
+
+<main>
+	<div class="row" style="width:80%;margin-left: 10%;">
 	@foreach($posts as $post)
-	<div class="d-flex m-5 border rounded">
-		<div style="padding:1%;">
-			<a href="{{route('post_by_user',['id'=>$post->user->id])}}"><img class="rounded-circle" style="height: 100px;width:100px;" src="/storage/{{$post->user->profile->image ?? 'avatar.png'}}"></a>
-			<br>
-			<center><p class="text-success">{{$post->user->username}}</p></center>
+	<br><br>
+	<div class="card" style="width:100%;margin-top: 3%;">
+		<div class="card-header">
+			<div class="card-header-content d-flex align-items-baseline">
+			<a href="{{route('edit-post',['id'=>$post->id])}}" class="mr-2"><h3 class="post-header">{{$post->title}}</h3></a> 
+			<small>by</small> <span style="font-weight: bolder;" class="ml-2 text-success post-author">
+				<i><a class="text-success" href="{{route('post_by_user',['id'=>$post->user->id])}}">{{$post->user->name}}</a></i></span><br style="display: none" class="time-break">
+			<small class="ml-auto post-time" style="color:gray;font-weight: bold;"><span>Created at {{$post->created_at}}</span></small>
+			</div>
 		</div>
-		<div class="card" style="width:100%;">
-			<div class="card-header">
-				<h4><a href="{{route('edit-post',['id'=>$post->id])}}">{{$post->title}}</a></h4>
-			</div>
-			<div class="card-body">
-				<p>{{$post->body}}</p>
-			</div>
-			
+		<div class="card-body">
+			<p class="post-content" style="">{{$post->body}}</p>
 		</div>
 	</div>
 	@endforeach
+	</div>
+</div>
 	<div style="width:100%;" class="d-flex justify-center">
 		
 			<div style="width: 50%;margin-left: 25%;display: flex;justify-content: center;">{{$posts->links("pagination::bootstrap-4")}}</div>

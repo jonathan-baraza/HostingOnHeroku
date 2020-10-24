@@ -7,7 +7,7 @@
 </script>
 @endif
 <br><br>
-		<form style="width:500px;margin-left: 30%;" class="p-3 border" style="" method="POST"  action="{{route('add-post')}}">
+		<form  style="width:40%;margin-left: 30%;" class="p-3 border form" style="" method="POST"  action="{{route('add-post')}}">
 			@csrf
 			<div class="alert alert-warning">Add New Post</div>
 			<x-jet-validation-errors class="mb-4 text-danger" />

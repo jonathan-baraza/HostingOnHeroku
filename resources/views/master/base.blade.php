@@ -3,9 +3,37 @@
 <head>
 	<x-links/>
 	<title>@yield('title')</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@media (max-width: 500px){
+			.card-header-content{
+				display: block !important;
+			}
+			.post-header{
+				font-size: 20px;
+			}
+			.post-author{
+				font-size: 15px;
+			}
+			.time-break{
+				display: block !important;
+			}
+			.form{
+				width:80% !important;
+				margin-left: 10% !important;
+			}
+			.bordersss{
+				border:none !important;
+			}
+			.borderssss{
+				border:none !important;
+				margin-left: 5% !important;
+			}
+		}
+	</style>
 </head>
 <body>
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+<nav style="width:100%;" id="nav-big" class="navbar navbar-expand-sm bg-dark navbar-dark">
   <!-- Brand -->
   <a class="navbar-brand" href="#">King's Blog</a>
 
@@ -64,6 +92,10 @@
     </ul>
   </div>
 </nav>
+
+
+
+
 
 <div class="mb-5">
 	@yield('content')
