@@ -27,7 +27,7 @@
 			}
 			.borderssss{
 				border:none !important;
-				margin-left: 3% !important;
+				margin-left: 1% !important;
 			}
 		}
 	</style>
