@@ -22,7 +22,7 @@
 <div style="width: 70%;margin-left: 15%;margin:2%;" class="alert alert-danger">Designed and managed by Jonathan Baraza.</div>
 </center>
 <center>
-    <a href="{{route('register')}}" class="btn btn-primary p-3 mb-4">CLICK HERE TO GET STARTED</a>
+    <a href="{{route('register')}}" class="btn btn-primary p-3 mb-4 mt-2">CLICK HERE TO GET STARTED</a>
 </center>
 <br><br>
 </body>
