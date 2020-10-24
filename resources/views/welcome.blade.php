@@ -12,7 +12,7 @@
 
 <center>
     <br>
-<h4><u>A few pointers before you proceed</u></h4>
+<h4><u>A few pointers before you proceed:</u></h4>
 <div style="width: 70%;margin-left: 15%;margin:2%;" class="alert alert-success">The king's Super Blog is an app designed to blogs about anything and share them with friends and family. It allows update features to your blog posts as well as your profile. This is just a beta version of the app.</div>
 <div style="width: 70%;margin-left: 15%;margin:2%;" class="alert alert-success">Use the nav bar to navigate to various functionalities of the app.</div>
 <div style="width: 70%;margin-left: 15%;margin:2%;" class="alert alert-success">Add Posts about anything. You only need a post title and body.</div>
@@ -21,7 +21,7 @@
 <div style="width: 70%;margin-left: 15%;margin:2%;" class="alert alert-danger">Designed and managed by Jonathan Baraza.</div>
 </center>
 <center>
-    <a href="{{route('register')}}" class="btn btn-outline-info p-3">GET STARTED</a>
+    <a href="{{route('register')}}" class="btn btn-primary p-3">CLICK HERE TO GET STARTED</a>
 </center>
 </body>
 </html>
