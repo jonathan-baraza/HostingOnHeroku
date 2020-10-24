@@ -57,10 +57,7 @@
 				<label for="about_me">About me</label>
 				<input id="about_me" type="text" name="about_me" value="{{$user->profile->about_me}}" class="form-control">
 			</div>
-			<div class="form-group">
-				<label for="image">Image</label>
-				<input id="image" type="file" name="image" value="" class="form-control">
-			</div>
+			
 
 			<input type="submit" name="submit" value="Update" class="btn btn-primary">
 			
